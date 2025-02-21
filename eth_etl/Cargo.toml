@@ -5,8 +5,9 @@ edition = "2021"
 
 [dependencies]
 tokio = { version = "1", features = ["full"] }
-reqwest = { version = "0.11", features = ["json"]}
-serde = { version = "1.0", featrues = ["derive"] }
+tokio-postgres = { version = "0.7", features = ["with-serde_json-1"] }
+serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 dotenv = "0.15"
-tokio-postgres = { version = "0.7", featrues = ["with-sede_json-1"] }
+reqwest = { version = "0.11", features = ["json"] }
+rust_decimal = { version = "1.32", features = ["db-postgres"] }
